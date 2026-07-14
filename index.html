@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Tailwind Project</title>
+    <style>
+     @keyframes blob {
+           0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    
+  }
+
+  25% {
+    border-radius: 30% 70% 50% 50% / 40% 60% 30% 70%;
+   
+  }
+
+  50% {
+    border-radius: 50% 50% 70% 30% / 60% 40% 60% 40%;
+    
+  }
+
+  75% {
+    border-radius: 70% 30% 40% 60% / 30% 70% 40% 60%;
+    
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    
+  }
+        }
+
+        .animate-blob {
+            animation: blob 10s infinite ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="box-border bg-gradient-to-r from-black via-blue-950 to-black opacity-89 items-center h-screen box-border relative ">
+    <div class="opacity-20  w-90 h-90 bg-gradient-to-r from-purple-400 to-blue-600 animate-blob rounded-full -z-10 fixed top-30 right-[40%] animate-blob"></div>
+
+    <header class="fixed border-1 border-white bg-transparent top-5 z-10000 backdrop-blur-lg w-[80%] pl-4 pr-4 mt-5 ml-30 h-10 bg-slate-800 rounded-3xl flex items-center justify-between z-10 ">
+        <div class="flex justify-center gap-0.5 items-center">
+            <div class="h-5 w-5 bg-gradient-to-r from-purple-400 to-blue-400 rounded-[4px] flex justify-center items-center text-[14px]">
+            <ion-icon class="text-amber-400" name="flash"></ion-icon>
+            </div>
+            <h1 class="text-white">FlowApp</h1>
+        </div>
+        <div class="flex  justify-center items-center gap-4 text-white transition-all duration-500  pr-2">
+            <ul class="transition-all duration-300 cursor-pointer hover:bg-slate-900 hover:h-7 hover:w-18 hover:flex hover:justify-center rounded-[4px] hover:translate-y-[-3px]"><a href="#">Features</a></ul>
+            <ul class="transition-all duration-300 cursor-pointer hover:bg-slate-900 hover:h-7 hover:w-18 hover:flex hover:justify-center rounded-[4px] hover:translate-y-[-3px]"><a href="#">Pricing</a></ul>
+            <ul class="transition-all duration-300 cursor-pointer hover:bg-slate-900 hover:h-7 hover:w-18 hover:flex hover:justify-center rounded-[4px] hover:translate-y-[-3px]"><a href="#">Reviews</a></ul>
+            <ul class="transition-all duration-300 flex hover:translate-y-[-3px]  justify-center items-center rounded-[5px] h-8 w-25 bg-gradient-to-r from-purple-500 to-blue-500 "><a href="#"><button class="rounded-[5px] flex cursor-pointer justify-center items-center bg-slate-900 h-7 w-24 blur-none">Get Started</button></a></ul>
+        </div>
+
+    </header>
+    <section class="mt-30 text-white mt-2 z-20 h-9 bg-slate-800 w-[20%] ml-30 text-[13px] flex justify-center items-center rounded-2xl">
+        <div class="flex items-center gap-1"><span class="flex justify-center items-center w-2 h-2 rounded-full bg-green-600"></span><p>Now with AI-powered features <span class="h-7 w-10 rounded-[4px] bg-gradient-to-r from-blue-600 to-purple-600"><span class="font-bold text-[9px]">NEW</span></span></p></div>
+    </section>
+    <section class="relative z-10 pt-10 pr-20 text-white flex justify-between ml-30">
+        <div class="w-[40%]">
+            <div class="">
+                <p class=" text-[2.8rem] font-bold ">Build products</p>
+                <p class="bg-clip-text text-transparent text-[2.8rem] font-bold bg-gradient-to-r from-purple-700 to-blue-900">users love</p>
+            </div>
+            <div class="pt-3 pb-3">
+                <p>The all-in-one platform for teams to collaborate, design and ship amazing products 10x faster.</p>
+            </div>
+            <div class="pt-5 gap-2 flex">
+                <button class="cursor-pointer hover:bg-gradient-to-r  hover:from-blue-600 hover:to-purple-600 transition-all duration-300 hover:translate-y-[-3px] h-15 w-40 rounded-2xl bg-gradient-to-r from-blue-950 to-purple-950 text-[18px]">Start Free trial <ion-icon name="arrow-forward-outline"></ion-icon> </button>
+                <button class="cursor-pointer gap-1  hover:bg-slate-700 transition-all duration-300 hover:translate-y-[-3px] h-15 w-40 rounded-2xl bg-slate-900 border-1 text-[18px] flex justify-center items-center"><span class ="text-2xl flex justify-center items-center "><ion-icon name="caret-forward-circle-outline"></ion-icon></span> Watch Demo</button>
+            </div>
+            
+            <div class="flex pt-6 gap-2">
+                <div class="flex justify-center text-[10px] items-center">
+                <img class="h-8 w-8 border-1 rounded-t-4xl  rounded-b-4xl rounded-l-4xl rounded-r-[-10px]" src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img">
+                <img class="h-8 w-8 border-1 rounded-t-4xl translate-x-[-6px] rounded-b-4xl rounded-l-4xl" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww" alt="img">
+                <img class="h-8 w-8 border-1 rounded-full translate-x-[-12px]" src="https://plus.unsplash.com/premium_photo-1678197937465-bdbc4ed95815?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVyc29ufGVufDB8fDB8fHww" alt="img">
+            </div>
+            <div class="text-[10px] flex flex-col justify-center items-center">
+                
+                <p class="flex justify-center items-center gap-2" ><span class="text-amber-300 "><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon></span>4.9/5</p>
+                <p>Trusted by 2,000+ teams worldwide</p>
+             </div>
+            </div>
+            
+            
+        </div>
+        <div class="relative" >
+            <img class="h-70 rounded-2xl transition-all duration-150 hover:scale-105 cursor-pointer" src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img">
+            <div class="cursor-pointer flex justify-center items-center absolute top-0 right-[-30px] h-10 w-20 rounded-2xl pl-2 bg-slate-500/60  border-1 animate-bounce"><p class="font-bold flex justify-center items-center pl-2  text-white">+127% Grow</p></div>
+            <div class="cursor-pointer absolute flex justify-start pl-3 items-center top-30 right-[-30px] h-10 w-30 animate-bounce border-1 backdrop-blur-2xl [animation-delay:300ms] rounded-2xl bg-transparent"><span class="size-4 border-1 border-black bg-blue-500 rounded-full"></span ><span class="size-4 translate-x-[-6px] border-1 border-black bg-purple-500 rounded-full"></span><span class="size-4 border-1 translate-x-[-12px] border-black bg-red-500 rounded-full"></span><p class="flex justify-center items-center pl-2 text-[13px] pr-1">3 online</p></div>
+            <div class="cursor-pointer absolute bottom-10 left-[-14px] rounded-2xl backdrop-blur-lg border-1 animate-bounce h-10 w-25 flex justify-center items-center bg-transparent"><p class="text-[10px] pl-2 flex justify-center items-center"><ion-icon class="text-3xl text-green-600" name="checkmark-circle"></ion-icon> Task Completed</p></div>
+        </div>
+        <div>
+
+        </div>
+    </section>
+     <div class="flex justify-center items-center pt-6">
+        <ion-icon class="text-4xl text-white animate-bounce [animation-delay:400ms]" name="code-download-outline"></ion-icon>
+    </div>
+    <section>
+        <div class="pl-[20%] pt-10 text-white w-[80%] flex flex-col justify-center items-center">
+            <h1 class="pt-7 text-blue-600 font-bold">FEATURES</h1>
+            <h2 class="pt-5 text-4xl font-bold">Everything you need</h2>
+            <h3 class="pt-7 pb-8">Powerful features designed to supercharge your workflow</h3>
+        </div>
+        <div class="grid grid-rows-3 pb-10 grid-cols-3 h-100 ml-30 gap-4 border-white  w-[80%]">
+            <div class="hover:translate-y-[-3px] col-span-2 row-span-2 bg-gradient-to-r border-1 border-white flex rounded-2xl from-blue-900 to-purple-900  backdrop-blur-xl">
+                <div class="p-4 w-[50%]">
+                    <p class="h-8 w-8 bg-gradient-to-r flex justify-center items-center rounded-[4px] mb-2 from-blue-600 to-purple-600">🚀</p>
+                    <h1 class="text-white font-bold mb-2">AI-Powered Automation</h1>
+                    <p class="text-[14px] text-slate-200 mb-2">Let AI handel repetitive tsaks while you focus on what matters. Smart suggestions, auto-completion, and inteliigent workflows.</p>
+                    <div class=" grid gap-1.5 grid-cols-3 mt-4">
+                        <div class="border-1 cursor-pointer hover:translate-y-[-3px] border-white bg-slate-600 flex justify-center items-center rounded-2xl" ><p class="text-[10px]">Smart Suggestions</p></div>
+                        <div class="border-1 cursor-pointer hover:translate-y-[-3px] border-white bg-slate-600 flex justify-center items-center rounded-2xl"><p class="text-[10px]">Auto-complete</p></div>
+                        <div class="border-1 cursor-pointer hover:translate-y-[-3px] border-white bg-slate-600 flex justify-center items-center rounded-2xl"><p class="text-[10px]">Workflows</p></div>
+
+                    </div>
+                </div>
+                <div class="w-[45%]"><img class="rounded-2xl mt-6" src="https://images.unsplash.com/photo-1729714055320-4d1c5d5e213d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1hbiUyMHdvcmtpbmclMjBuJTIwbGFwdG9wfGVufDB8fDB8fHww" alt="img">
+                </div>
+            </div>
+            <div class="group cursor-pointer hover:translate-y-[-3px] p-2 border-1 border-white rounded-2xl bg-slate-800"><p class="group-hover:bg-blue-500 bg-blue-600 w-8 h-8 rounded-[5px] flex justify-center items-center text-yellow-600"><ion-icon name="flash"></ion-icon></p>
+            <p class="text-white mt-1">Lightning Fast</p>
+            <p class="text-white  text-[10px]">Sub-milliseconds responses times with  global edge development</p></div>
+            <div class="group cursor-pointer hover:translate-y-[-3px] p-2 border-1 border-white group-hover:border-green-500 rounded-2xl bg-slate-800"><p class="group-hover:bg-green-500  bg-green-900 w-8 h-8 rounded-[5px] flex justify-center items-center text-white"><ion-icon name="help-circle"></ion-icon></p>
+            <p class="text-white mt-1">Bank-Level Security</p>
+            <p class="text-white  text-[10px]">256-bit encryption, SOC2 complaint, GDPR ready.</p></div>
+            <div class="group cursor-pointer hover:translate-y-[-3px] p-2 border-1 border-white group-hover:border-purple-500 rounded-2xl bg-slate-800"><p class="group-hover:bg-purple-500 bg-purple-900 w-8 h-8 rounded-[5px] flex justify-center items-center text-white"><ion-icon name="help-circle"></ion-icon></p>
+            <p class="text-white mt-1">Advanced Analytics</p>
+            <p class="text-white  text-[10px]">Real-time dashboards with custom reports and insights.</p></div>
+            <div class="group cursor-pointer hover:translate-y-[-3px] p-2 border-1 border-white group-hover:border-amber-800 rounded-2xl bg-slate-800"><p class="group-hover:bg-amber-800 bg-amber-950 w-8 h-8 rounded-[5px] flex justify-center items-center text-blue-500"><ion-icon name="sync-circle"></ion-icon></p>
+            <p class="text-white mt-1">Real-Time Sync</p>
+            <p class="text-white  text-[10px]">Instant sunc unlimited devices and platforms.</p></div>
+            <div class="group cursor-pointer hover:translate-y-[-3px] p-2 border-1 border-white group-hover:border-pink-800 rounded-2xl bg-slate-800"><p class="group-hover:bg-pink-800 bg-pink-950 w-8 h-8 rounded-[5px] flex justify-center items-center text-yellow-600"><ion-icon name="heart"></ion-icon></p>
+            <p class="text-white mt-1">Team Collaboration</p>
+            <p class="text-white  text-[10px]">Real-time editing, comments and version history</p></div>
+
+        </div>
+        <div class="flex pt-10 flex-col items-center"><p class="text-2xl text-purple-800">Testimonials</p>
+        <h1 class="text-white pr-4 text-3xl" >Loved by thousands</h1>
+        <div class="grid grid-cols-[1fr_2fr_1fr] pl-30 pr-30 pt-10 pb-10 gap-10"> 
+            <div class="hover:translate-[-5px] transition-all duration-300 hover:bg-slate-600 cursor-pointer bg-slate-800 backdrop-blur-2xl  border-1 border-white rounded-2xl translate-y-2 p-3 h-40"><p class="pb-2 text-amber-300 text-[7px]"><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></p><p class="text-white text-[10px]">"FlowApp completely transformed our workflow. We ahipped 3x faster in the first month alone."</p> <div class="flex gap-2 pt-4 w-[80%]"> <img class="h-10 w-8 rounded-full" src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img"><div><h1 class="text-[10px] text-white">Sarah Johnson</h1><p class="text-slate-600 text-[10px]">CEO, TechStartup</p></div></div></div>
+            <div class="hover:translate-[-5px] transition-all duration-300 hover:bg-slate-600 cursor-pointer bg-slate-800 backdrop-blur-2xl  border-1 border-white rounded-2xl  p-4 h-40"><p class="pb-2 text-amber-300 text-[7px]"><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></p><p class="text-white text-[10px]">"The AI featuers are mind-blowing. It's like having an extra team member that never sleeps."</p><div class="flex gap-2 pt-4 w-[80%]"> <img class="h-10 w-8 rounded-full" src="https://plus.unsplash.com/premium_photo-1678197937465-bdbc4ed95815?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVyc29ufGVufDB8fDB8fHww" alt="img"><div><h1 class="text-[10px] text-white">Mike Chen</h1><p class="text-slate-600 text-[10px]">CTO,DevCorp</p></div></div></div>
+            <div class="hover:translate-[-5px] transition-all duration-300 hover:bg-slate-600 cursor-pointer bg-slate-800 backdrop-blur-2xl  border-1 border-white rounded-2xl translate-y-2 p-3 h-40"><p class="pb-2 text-amber-300 text-[7px]"><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></p><p class="text-white text-[10px]">"Best investment we've maded.The ROI was visible within the first week of using FlowApp."</p><div class="flex gap-2 pt-4 w-[80%]"> <img class="h-10 w-8 rounded-full" src="https://plus.unsplash.com/premium_photo-1731378711185-b30d89cb8446?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDMxfHx8ZW58MHx8fHx8" alt="img"><div><h1 class="text-[10px] text-white">Emily Davis</h1><p class="text-slate-600 text-[10px]">Founder,DesignHub</p></div></div> </div>
+            </div>
+    
+    </div>
+    <div class="flex p-10 pb-20 flex-col items-center text-white bg-gradient-to-r from-blue-700 to-pink-700">
+        <h1 class="text-3xl mb-5 font-bold w-[50%] flex flex-col items-center">Ready to transform <span>your workflow?</span></h1>
+        <p class="w-[50%] mb-5 ">   Join 2,000+ teams already using FlowApp to build better products, faster.</p>
+        <div class="grid gap-3 h-15 mt-16 grid-cols-2 w-[50%]">
+            <button class="cursor-pointer transition-all duration-300 hover:translate-y-[-4px] bg-white flex justify-center items-center font-bold text-black  border-1 border-white rounded-2xl">Start Free Trial<ion-icon class=" flex justify-center items-center" name="arrow-forward"></ion-icon></button>
+            <button class="cursor-pointer transition-all duration-300 hover:translate-y-[-4px] border-1 border-white rounded-2xl backdrop-blur-2xl">Schedule Demo</button>
+        </div>
+        <p class="flex pt-10 gap-1">No credit card required <span class="font-bold ">.</span> 14-days free trial <span class="font-bold">.</span> Cancel anytime</p>
+    </div>
+    <footer class="p-10 flex justify-around text-slate-600 bg-black">
+        <div class="w-[30%]">
+            <div class="flex gap-2"><p class="group-hover:bg-blue-500 bg-gradient-to-r from-blue-600 to-pink-700 w-8 h-8 rounded-[5px] flex justify-center items-center text-yellow-600"><ion-icon name="flash"></ion-icon><p class="text-white">FlowApp</p></div>
+            <p class="text-[14px] pt-4">Build better products faster with the all-in-one platform for modern teams.</p>
+            <div class=" pt-4 w-[50%] grid-cols-3 grid">
+                <span class="bg-slate-600 rounded-[5px] h-10 w-10 text-white flex justify-center items-center text-2xl hover:translate-y-[-5px] cursor-pointer"><ion-icon name="logo-x"></ion-icon></span>
+                <span class="bg-slate-600 rounded-[5px] h-10 w-10 text-white flex justify-center items-center text-2xl hover:translate-y-[-5px] cursor-pointer"><ion-icon name="logo-linkedin"></ion-icon></span>
+                <span class="bg-slate-600 rounded-[5px] h-10 w-10 text-white flex justify-center items-center text-2xl hover:translate-y-[-5px] cursor-pointer"><ion-icon name="play"></ion-icon></span>
+            </div>
+        </div>
+        <div>
+            <div class="gap-2 flex flex-col">
+                <h1 class="font-bold text-white text-2xl">Products</h1>
+                <p class=" hover:translate-y-[-5px] cursor-pointer">Features</p>
+                <p class=" hover:translate-y-[-5px] cursor-pointer">Pricing</p>
+                <p class=" hover:translate-y-[-5px] cursor-pointer">Integrations</p>
+                <p class=" hover:translate-y-[-5px] cursor-pointer">Changelog</p>
+            </div>
+        </div>
+        <div>
+            <div class="gap-2 flex flex-col">
+                <h1 class="font-bold text-white text-2xl">Company</h1>
+                <p class=" hover:translate-y-[-5px] cursor-pointer">About</p>
+                <p class=" hover:translate-y-[-5px] cursor-pointer">Blog</p>
+                <p class=" hover:translate-y-[-5px] cursor-pointer">Careers</p>
+                <p class=" hover:translate-y-[-5px] cursor-pointer">Press</p>
+            </div>
+        </div>
+        <div>
+            <div class="gap-2 flex flex-col">
+                <h1 class="font-bold text-white text-2xl">Legal</h1>
+                <p class=" hover:translate-y-[-5px] cursor-pointer">Privacy</p>
+                <p class=" hover:translate-y-[-5px] cursor-pointer">Terms</p>
+                <p class=" hover:translate-y-[-5px] cursor-pointer">Security</p>
+            </div>
+        </div>
+    </footer>
+    <section class="bg-black p-20 pb-10 flex items-center justify-center">
+        <div class="pt-3 w-[80%] border-slate-700 border-t-1 text-slate-700 flex justify-between">
+            <div class="flex justify-center items-center"><ion-icon class="flex justify-center items-center  text-amber-500" name="flash"></ion-icon> <p class="flex justify-center items-center font-bold text-white">FlowApp</p></div>
+            <div><p>&copy; 2026 FlowApp  All rights reserved.</p></div>
+        </div>
+    </section>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
